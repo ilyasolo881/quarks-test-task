@@ -1,46 +1,37 @@
-# Getting Started with Create React App
+### Affemity
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Опис
 
-## Available Scripts
+Тестове завдання для компанії https://quarks.tech/. Основна суть завдання створити невелий додаток, де буде стартова сторінка від якої іде розгалуження до тестів з різних питань, і кінцева де користувач надає свою пошту, валідується ця форма та надсилаються відповіді і результат на пошту.
 
-In the project directory, you can run:
+## Запуск проекту 
 
-### `npm start`
+# Клонування з github
+  git clone 
+# Завантаження залежностей 
+  npm install
+# Запуск проекту
+  npm start
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+  Проект відкриється на порті: http://localhost:3000/
+## Вдалось виконати основний функціонал:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Переход по сторінках. Відповідність до дизайну (окрім одного місця). Вдалось додати функціонал з зберіганням відповідей користувача на умовних вкладках тестів в рамках одного рендеру. Перемикання між цими tabs вперед і назад. Валідація вибраної відповіді. Базові анімації. Валідація введеної користувачем пошти з тротлінгом в 0.5 секунд.
 
-### `npm test`
+## Що можна покращити:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Доробити сторінку тестів по дизайну, розбити деякі блоки коду на перевикористовувані компоненти (Footer, Header, Button), адаптація на планшет та десктоп через mixin, виправлення багу з помилкою при валідації пошти, створення заглушки для пункту Other на стартовій сторінці, додати більше змінних та міксінів через sass, для зручності подальшої зміни та маштабування. Додати аніміції умовного завантаження та обробки відповідей. Карусель відгуків користувачів
 
-### `npm run build`
+## Технології при розробці:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+React, typeScript, sass, classnames, chatGPT, mdn, методологія BEM(в деяких місцях). Збірка через create-react-template
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Відповідь на запитання, що можна покращити на сайті https://affemity.com/
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. На великих екранах більшість контенту приліпилось до боків екрану, і коли ми маємо розмір 2к чи 4к у нас пуста середина екрану і контент знаходиться далеко один від одного, наприклад лого і навігаційна панель дуууже далеко однин від одного. Бачу сенс в глобальному контейнері, який утримує контент від віддалення. Краще виглядає для великих екранів та можна змінити в одному місці.
+2. Під час проходження першого етапу тестування іде анімація обробки результатів, і далі потрапляєшь на другий етап. В продовж всього тестування є кнопка назад на 1 тест, якщо після анімації, на початку другого етапу її натиснути, тебе поверне на анімацію, а на цій сторінці вже не має можливості повернутись до своїх відповідей на 1-у етапі. І ми застрягли в тестах, і треба вертатись назад через браузерну кнопку чи через сторку пошуку.
+3. Це більше відноситься до дизайну і мабуть суб'єктивно. Через браузер-інспектор (f12) можна подивитись на розмір блоків, кнопок і так далі. І більшість з них має не дуже зручний розмір у rem em та відстоках, можливість змінювати в одному місці і змінюються усі шрифти це зручно, але в дизайні є місцья де ми маємо 327px, чи ще якісь не ріні числа із-за яких терба вираховувати довжину/16 щоб отримати коофіцієнт rem чи em. Можливо я не правильно зрозумів як цим користуватись, але мені подобається підхід коли УСІ розміри кратні 2,4 чи краще 5 ще краще 10, зручно рахувати і писати такий код і не впливає на сильно погано на дизайн.
 
-### `npm run eject`
+## Виконав
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Солонецький Ілля - Front-end developer
