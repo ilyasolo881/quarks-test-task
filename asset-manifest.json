@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/quarks-test-task/static/css/main.e2d790b5.css",
-    "main.js": "/quarks-test-task/static/js/main.961987c2.js",
+    "main.css": "/quarks-test-task/static/css/main.2774080b.css",
+    "main.js": "/quarks-test-task/static/js/main.79bc0e3f.js",
     "index.html": "/quarks-test-task/index.html",
-    "main.e2d790b5.css.map": "/quarks-test-task/static/css/main.e2d790b5.css.map",
-    "main.961987c2.js.map": "/quarks-test-task/static/js/main.961987c2.js.map"
+    "main.2774080b.css.map": "/quarks-test-task/static/css/main.2774080b.css.map",
+    "main.79bc0e3f.js.map": "/quarks-test-task/static/js/main.79bc0e3f.js.map"
   },
   "entrypoints": [
-    "static/css/main.e2d790b5.css",
-    "static/js/main.961987c2.js"
+    "static/css/main.2774080b.css",
+    "static/js/main.79bc0e3f.js"
   ]
 }
