@@ -11,7 +11,7 @@ export const Home = () => {
     <div className={styles.container}>
       <div className={styles.header}>
         <div className={styles.header__logo}>
-          <img src="images/logo.svg" alt="logo" />
+          <img src="/quarks-test-task/images/logo.svg" alt="logo" />
           <div className={styles.header__logo_text}>Affemity</div>
         </div>
         <h3 className={styles.header__title}>
@@ -27,7 +27,7 @@ export const Home = () => {
       <div className={styles.diagram}>
         <img
           className={styles.diagram__img}
-          src="images/diagram.svg"
+          src="/quarks-test-task/images/diagram.svg"
           alt="diagram"
         />
       </div>

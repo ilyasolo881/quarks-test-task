@@ -11,7 +11,7 @@ export const Email = () => {
     <div className={styles.container}>
       <div className={styles.header}>
         <div className={styles.header__logo}>
-          <img src="images/logo.svg" alt="logo" />
+          <img src="/quarks-test-task/images/logo.svg" alt="logo" />
           <div className={styles.header__logo_text}>Affemity</div>
         </div>
         <h3 className={styles.header__title}>You’re almost done!</h3>
@@ -22,7 +22,7 @@ export const Email = () => {
 
       <Input setIsValid={setIsValid} />
 
-      <Button path={"/"} disabled={!isValid}>
+      <Button path={"/other"} disabled={!isValid}>
         Get result
       </Button>
 
