@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/quarks-test-task/static/css/main.e2d790b5.css",
-    "main.js": "/quarks-test-task/static/js/main.abf12956.js",
+    "main.js": "/quarks-test-task/static/js/main.961987c2.js",
     "index.html": "/quarks-test-task/index.html",
     "main.e2d790b5.css.map": "/quarks-test-task/static/css/main.e2d790b5.css.map",
-    "main.abf12956.js.map": "/quarks-test-task/static/js/main.abf12956.js.map"
+    "main.961987c2.js.map": "/quarks-test-task/static/js/main.961987c2.js.map"
   },
   "entrypoints": [
     "static/css/main.e2d790b5.css",
-    "static/js/main.abf12956.js"
+    "static/js/main.961987c2.js"
   ]
 }
