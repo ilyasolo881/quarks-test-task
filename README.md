@@ -8,7 +8,7 @@
 
 ### Клонування з github
 
-git clone
+git clone https://github.com/ilyasolo881/quarks-test-task.git
 
 ### Завантаження залежностей
 
