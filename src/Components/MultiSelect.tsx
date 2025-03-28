@@ -52,8 +52,28 @@ export const MultiSelect = () => {
   return (
     <div className={styles.container}>
       <div className={styles.header}>
-        <h3 className={styles.header__title}>{currentQuestion.question}</h3>
-        <h4 className={styles.header__text}>Select all that apply</h4>
+        <button
+          className={styles.header__button}
+          disabled={page === 0}
+          onClick={handlePrevious}
+        >
+          ←
+        </button>
+
+        <div className={styles.header__logo}>
+          <img src="/quarks-test-task/images/logo.svg" alt="logo" />
+          <div className={styles.header__logo_text}>Affemity</div>
+        </div>
+
+        <div>
+          <span style={{ color: " #31728D" }}>{page + 1}</span>/
+          {optionsList.length}
+        </div>
+      </div>
+
+      <div className={styles.test}>
+        <h3 className={styles.test__question}>{currentQuestion.question}</h3>
+        <h4 className={styles.test__discription}>Select all that apply</h4>
       </div>
 
       <div className={styles.optionsList}>
@@ -77,27 +97,13 @@ export const MultiSelect = () => {
           </label>
         ))}
 
-        <div className={styles.navigation}>
-          <button
-            className={styles.button}
-            disabled={page === 0}
-            onClick={handlePrevious}
-          >
-            Back
-          </button>
-
-          <span>
-            {page + 1}/{optionsList.length}
-          </span>
-
-          <button
-            className={styles.button}
-            disabled={isDisabled}
-            onClick={handleNext}
-          >
-            Continue
-          </button>
-        </div>
+        <button
+          className={styles.button}
+          disabled={isDisabled}
+          onClick={handleNext}
+        >
+          Continue
+        </button>
       </div>
     </div>
   );
